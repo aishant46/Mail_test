@@ -4,60 +4,20 @@
 </head>
     
     <body>
-        <div classname="container">
-        <div className="contact-form">
-        <form actionm="https://formspree.io/f/mnqydzzy" method="post" className="contact-inputs">
-        <div>
-            <label for="username"></label>
-            <input
-                   type="text"
-                   name="usename"
-                   placeholder="username"
-                   id="username"
-                   required
-                   autocomplete="off"
-                   />
-                    
-            </div>
-        <div>
-            <input
-                   type="email"
-                   name="Email"
-                   placeholder="E mail"
-                   autocomlete="off"
-                   required
-                   />
-            </div>
-        <div>
-            <input
-                   type="text"
-                   name="subject"
-                   placeholder="subject"
-                   autocomplete="off"
-                   required
-            />
-            </div>
-        <div>
-            <input
-                   type="textarea"
-                   cols="30"
-                   rows="10"
-                   autocomplete="off"
-                   required
-                   
-                   />
-            </div>
-            <div>
-                <input
-                       type="submit"
-                       name="submit"
-                       class="btn"
-                       value="send message"
-                       />
-            </div>
-        </form>
-    </div></div>
-
-
+        <form
+  action="https://formspree.io/f/mnqydzzy"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
     </body>
 </html>
